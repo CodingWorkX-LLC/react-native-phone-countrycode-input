@@ -81,5 +81,3 @@ const styles = StyleSheet.create({
 ## Authors
 
 - [@CodingWorkX](https://github.com/CodingWorkX-LLC)
-
-![CodingWorkX](http://codingworkx.com/img/logo.png)
