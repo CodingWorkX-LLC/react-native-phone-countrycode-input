@@ -1,0 +1,108 @@
+import {StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    height: 56,
+    width: '100%',
+    borderWidth: 1,
+    borderRadius: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#E0E0E0',
+    backgroundColor: '#FAFAFA',
+    justifyContent: 'space-between',
+  },
+  countryCodeCon: {
+    width: '22%',
+    height: '100%',
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 8,
+    justifyContent: 'space-between',
+  },
+  countryCodeTxt: {
+    fontSize: 13,
+    color: '#000000',
+    fontWeight: '500',
+  },
+  ddIconStyle: {
+    width: 16,
+    height: 16,
+  },
+  inputStyle: {
+    width: '76%',
+    fontSize: 12,
+    height: '100%',
+    borderRadius: 10,
+    color: '#000000',
+    paddingHorizontal: 10,
+  },
+  modalContainer: {
+    flex: 1,
+    flexDirection: 'column-reverse',
+    backgroundColor: 'rgba(51, 51, 51, 0.3)',
+  },
+  formContainer: {
+    flex: 0.8,
+    marginTop: 17,
+    overflow: 'hidden',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: '#FAFAFA',
+  },
+  searchStyle: {
+    height: 50,
+    width: '95%',
+    elevation: 3,
+    marginTop: 15,
+    shadowRadius: 3,
+    borderRadius: 12,
+    color: '#000000',
+    paddingVertical: 6,
+    shadowOpacity: 0.2,
+    alignSelf: 'center',
+    paddingHorizontal: 12,
+    shadowColor: '#000000',
+    backgroundColor: 'white',
+    shadowOffset: {width: 0, height: 2},
+  },
+  listItemCon: {
+    paddingVertical: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 0.5,
+    backgroundColor: 'white',
+    justifyContent: 'space-evenly',
+  },
+  itemImgStyle: {
+    width: 23,
+    marginRight: 5,
+    borderRadius: 15,
+    aspectRatio: 1 / 1,
+  },
+  seperator: {
+    height: '80%',
+    borderWidth: 1,
+    marginHorizontal: 5,
+  },
+  dialTextStyle: {
+    width: 55,
+    fontSize: 16,
+    color: '#000000',
+    fontWeight: '500',
+  },
+  countryName: {
+    width: 200,
+    marginLeft: 5,
+    color: '#000000',
+    fontWeight: '400',
+  },
+  listContainer: {
+    margin: 10,
+    paddingHorizontal: 16,
+    backgroundColor: '#ffffff',
+  },
+});
+
+export default styles;

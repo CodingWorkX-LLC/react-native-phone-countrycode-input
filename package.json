@@ -1,0 +1,31 @@
+{
+  "name": "react-native-phone-countrycode-input",
+  "version": "1.0.0",
+  "description": "React Native Phone Number Country Code Picker Input Component",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingWorkX-LLC/react-native-phone-countrycode-input.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Country",
+    "Code",
+    "Phone",
+    "Number"
+  ],
+  "author": "CodingWorkX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingWorkX-LLC/react-native-phone-countrycode-input/issues"
+  },
+  "homepage": "https://github.com/CodingWorkX-LLC/react-native-phone-countrycode-input#readme",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.4"
+  }
+}
