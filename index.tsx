@@ -167,7 +167,7 @@ function PhoneNumberCountryCodeInput(
           }}
           style={[
             styles.inputStyle,
-            { fontFamily: value?.length ? "500" : "400" },
+            { fontWeight: value?.length ? "500" : "400" },
             inputStyle,
           ]}
         />
