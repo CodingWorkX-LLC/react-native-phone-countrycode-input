@@ -29,9 +29,11 @@ interface Props {
   containerStyle?: ViewStyle;
   downArrowStyle?: ImageStyle;
   placeholderTextColor?: string;
+  isListDialCodeHide?: boolean;
   listDialCodeStyle?: TextStyle;
   listContainerStyle?: ViewStyle;
   countryNameTextStyle?: TextStyle;
+  countryCodeTextStyle?: TextStyle;
   setSelCountry: (val: any) => void;
   updatePhoneVal: (val: any) => void;
   listItemSeparatorStyle?: ViewStyle;
@@ -57,6 +59,8 @@ function PhoneNumberCountryCodeInput(
     listContainerStyle,
     placeholderTextColor,
     countryNameTextStyle,
+    isListDialCodeHide = false,
+    countryCodeTextStyle,
     keyboardReturnKeyType = "next",
     listItemSeparatorStyle,
     modalInnerContainerStyle,
@@ -117,9 +121,11 @@ function PhoneNumberCountryCodeInput(
           source={{ uri: item.image }}
           style={[styles.itemImgStyle, flagImgStyle]}
         />
-        <Text style={[styles.dialTextStyle, listDialCodeStyle]}>
-          {item.dial_code}
-        </Text>
+        {!isListDialCodeHide && (
+          <Text style={[styles.dialTextStyle, listDialCodeStyle]}>
+            {item.dial_code}
+          </Text>
+        )}
         <View style={[styles.seperator, listItemSeparatorStyle]} />
         <Text
           numberOfLines={2}
@@ -146,7 +152,9 @@ function PhoneNumberCountryCodeInput(
     <React.Fragment>
       <View style={[styles.container, containerStyle]}>
         <Pressable style={styles.countryCodeCon} onPress={toggleModal}>
-          <Text style={styles.countryCodeTxt}>{countryCode}</Text>
+          <Text style={[styles.countryCodeTxt, countryCodeTextStyle]}>
+            {countryCode}
+          </Text>
           {rednerRightArrow()}
         </Pressable>
         <TextInput
