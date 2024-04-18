@@ -1,6 +1,6 @@
 {
   "name": "react-native-phone-countrycode-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native Phone Number Country Code Picker Input Component",
   "main": "index.tsx",
   "scripts": {
